@@ -1,6 +1,6 @@
 ﻿namespace AnimalKingdom
 {
-    public abstract class Animal
+    public abstract class Animal: IMammal
     {
         public virtual string Sound()
         {
