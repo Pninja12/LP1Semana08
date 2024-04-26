@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
+namespace PlayerManager3 // >>> Change to PlayerManager2 for exercise 4 <<< //
 {
     /// <summary>
     /// The player listing program.
@@ -45,9 +45,11 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // We keep the user's option here
             string option;
 
+            playerList.Sort();
             // Main program loop
             do
             {
+                
                 // Show menu and get user option
                 ShowMenu();
                 option = Console.ReadLine();
@@ -57,6 +59,7 @@ namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
                 {
                     case "1":
                         InsertPlayer();
+                        playerList.Sort();
                         break;
                     case "2":
                         ListPlayers(playerList);
